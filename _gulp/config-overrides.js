@@ -18,7 +18,7 @@ var jekyllFolder = 'app';
 
 config.browsersync.development.config.server.baseDir = './build';
 
-config.browsersync.development.dependencies = config.browsersync.development.dependencies.push('jekyll');
+config.browsersync.development.dependencies = config.browsersync.development.dependencies.push('jekyll-build');
 
 config.watch.dependencies = config.watch.dependencies.push('jekyll-watch');
 

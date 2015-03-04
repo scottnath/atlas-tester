@@ -11,18 +11,26 @@ var messages = {
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll', function (done) {
+gulp.task('jekyll-build', function (done) {
   browsersync.notify(messages.jekyllBuild);
-
+console.log('jplane');
   return cp.spawn('bundle', ['exec', 'jekyll', 'build', '-q', '--source=' + config.jekyll.src, '--destination=' + config.jekyll.dest, '--config=' + config.jekyll.config], {stdio: 'inherit'})
       .on('close', done);
 
 });
 
-gulp.task('jekyll-rebuild', ['jekyll'], function() {
+gulp.task('jekyll-serve', function (done) {
+  browsersync.notify(messages.jekyllBuild);
+  console.log('jserve');
+  return cp.spawn('bundle', ['exec', 'jekyll', 'serve', '-q', '--source=' + config.jekyll.src, '--destination=' + config.jekyll.dest, '--baseurl', '\'\'', '--config=' + config.jekyll.config], {stdio: 'inherit'})
+      .on('close', done);
+
+});
+
+gulp.task('jekyll-rebuild', ['jekyll-serve'], function() {
   browsersync.reload();
 });
 
 gulp.task('jekyll-watch', function () {
-  gulp.watch(config.jekyll.watch, ['jekyll-rebuild']);
+  gulp.watch(config.jekyll.watch, ['jekyll-serve']);
 });

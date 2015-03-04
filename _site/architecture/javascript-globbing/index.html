@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"></a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
+                    <li class="active"><a href="/architecture">Architecture</a></li>
+                    <li class="active"><a href="/flow">Flow</a></li>
+                    
+                      <li class="active"><a href="https://github.com/scottnath/atlas">Github</a></li>
+                    
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <!-- <div class="sidebar well">
+Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+
+</div>
+
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        
+          <li><a href="/jekyll/update/2015/02/17/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
+        
+    </ul>
+</div> -->
+
+<div class="sidebar well">
+<ul>
+  <li><a href="/requirements">Requirements</a></li>
+  <li><a href="/installation">Installation</a></li>
+  <li><a href="/gulp-tasks">Gulp Tasks</a></li>
+</ul>
+</div>
+<div class="sidebar well">
+<h1>Architecture</h1>
+<ul>
+
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-framework/">Javascript Framework</a></li>
+    
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/browser-reload/">Browser Reload/Server</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/build-creation/">Build Creation</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/compass/">Compass</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/css-linting/">CSS Linting</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/css-production-conversion/">CSS Production Conversion</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/e2e-testing/">End-2-End Testing</a></li>
+    
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/file-revisioning/">File Revisioning</a></li>
+    
+    
+  
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/html-production-conversion/">HTML Production Conversion</a></li>
+    
+    
+  
+    
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-globbing/">Javascript Globbing</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-linting/">JavaScript Linting</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-production-convertion/">Javascript Prod Conversion</a></li>
+    
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/scss-globbing/">SCSS Globbing</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/scss-linting/">SCSS Linting</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/taskrunner/">Taskrunner</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/unit-testing/">Unit Testing</a></li>
+    
+    
+  
+</ul>
+
+<h1>Doc Flow Diagrams</h1>
+<ul>
+
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/flow/html/">HTML Templates</a></li>
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/flow/scss/">SCSS</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/flow/javascript/">Javascript</a></li>
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+</div>
+
+        </div>
+        <div class="col-md-9">
+            <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Javascript Globbing</h1>
+  </header>
+
+  <article class="post-content">
+    <h2 id="task-requirements">Task Requirements</h2>
+<ul>
+  <li>Find all non-bower javascript files in our /app system</li>
+  <li>Add these files to the main /app index.html file</li>
+  <li>Refresh the main html file</li>
+</ul>
+
+<h2 id="choice-gulp-injecthttpsgithubcomkleigulp-inject">Choice: <a href="https://github.com/klei/gulp-inject">gulp-inject</a></h2>
+
+<p>Gulp-Inject allows us to inject a list we choose into any type of file. This basic script is a perfect one-job system to cover this requirement.</p>
+
+  </article>
+
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2015 . Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
+            under
+            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+</body>
+</html>
+

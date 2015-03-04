@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"></a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
+                    <li class="active"><a href="/architecture">Architecture</a></li>
+                    <li class="active"><a href="/flow">Flow</a></li>
+                    
+                      <li class="active"><a href="https://github.com/scottnath/atlas">Github</a></li>
+                    
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <!-- <div class="sidebar well">
+Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+
+</div>
+
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        
+          <li><a href="/jekyll/update/2015/02/17/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
+        
+    </ul>
+</div> -->
+
+<div class="sidebar well">
+<ul>
+  <li><a href="/requirements">Requirements</a></li>
+  <li><a href="/installation">Installation</a></li>
+  <li><a href="/gulp-tasks">Gulp Tasks</a></li>
+</ul>
+</div>
+<div class="sidebar well">
+<h1>Architecture</h1>
+<ul>
+
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-framework/">Javascript Framework</a></li>
+    
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/browser-reload/">Browser Reload/Server</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/build-creation/">Build Creation</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/compass/">Compass</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/css-linting/">CSS Linting</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/css-production-conversion/">CSS Production Conversion</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/e2e-testing/">End-2-End Testing</a></li>
+    
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/file-revisioning/">File Revisioning</a></li>
+    
+    
+  
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/html-production-conversion/">HTML Production Conversion</a></li>
+    
+    
+  
+    
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-globbing/">Javascript Globbing</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-linting/">JavaScript Linting</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/javascript-production-convertion/">Javascript Prod Conversion</a></li>
+    
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/scss-globbing/">SCSS Globbing</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/scss-linting/">SCSS Linting</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/taskrunner/">Taskrunner</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/architecture/unit-testing/">Unit Testing</a></li>
+    
+    
+  
+</ul>
+
+<h1>Doc Flow Diagrams</h1>
+<ul>
+
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/flow/html/">HTML Templates</a></li>
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+    <li><a class="page-link" href="/flow/scss/">SCSS</a></li>
+    
+    
+  
+    
+    
+    <li><a class="page-link" href="/flow/javascript/">Javascript</a></li>
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</ul>
+
+</div>
+
+        </div>
+        <div class="col-md-9">
+            <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Javascript Framework</h1>
+  </header>
+
+  <article class="post-content">
+    <p>The framework we choose will be the workhorse of our application. This is what builds out pages, convert templates, pulls in data, and a million other things.</p>
+
+<h2 id="options">Options</h2>
+<ul>
+  <li><a href="http://emberjs.com">EmberJS</a></li>
+  <li><a href="http://backbonejs.org">Backbone</a></li>
+  <li><a href="https://angularjs.org">AngularJS</a></li>
+</ul>
+
+<p>As of 2014, these are the top options available. We did extensive research of all three to determine what was best for our purposes. We took into account not just the ease of writing for a particular framework, but also community support, client-side weight, and internal knowledge. For our tests we had different developers create to-do applications with each framework and document ease-of-use, ability to find answers, satisfaction with end result, etc.</p>
+
+<h3 id="backbone">Backbone?</h3>
+<p><strong>Backbone</strong> was fairly easy to rule out. It relied heavily on jQuery, which, as an organization, we are trying to phase out due to how bloated it has become and how <a href="http://youmightnotneedjquery.com">easy its functions are to do with plain javascript</a>. It also does not have data-binding, or any built-in directives, or really any structure. Backbone would be requiring us to start from scratch on a lot of items - which includes creating and documenting our own structure/templates/etc. It also relies on the DOM for understanding your model, which can be error-prone. While backbone has been used by some large sites, it’s community support is not massive. A search for “backbonejs” results in 879K google hits.</p>
+
+<p>Third-Party Modules: ~230 <a href="http://backplug.io/">backplugs</a></p>
+
+<h3 id="angular">Angular?</h3>
+<p><strong>Angular</strong> was already popular among many developers here. While it has a steep learning curve, once understood it can be quite powerful. It can be used to build full-scale applications or just single parts of an app - which means understanding of this framework can be translated into functionality in other non-angular systems. Angular proved so versatile that Google sponsors it as an open source project - which means it has full-time employees from a major tech company working to make it better every day. Angularjs has massive developer community and a search for “angularjs” results in 8.5 million google hits.</p>
+
+<p>Third-Party Modules: ~800 <a href="http://ngmodules.org">ngmodules</a></p>
+
+<h3 id="ember">Ember?</h3>
+<p><strong>Ember</strong> has some nice built in features like a router and it’s own data layer. It has underdone a bunch of changes since it’s inception, which makes a lot of online examples and answer-responses out-of-date and wrong. It was built for performance and it uses handlebars for templating - which gums up the HTML source code adds too much weight to the file size. It should be a contender, but it simply does not have a solid enough developer community for us to get the kind of open-source benefit we need. A search for “emberjs” results in 1.6 million google hits.</p>
+
+<p>Third-Party Modules: ~20 <a href="http://emberaddons.com/">emberaddons</a></p>
+
+<h2 id="choice-angularjshttpsangularjsorg">Choice: <a href="https://angularjs.org">AngularJS</a></h2>
+<p>### Features
+* Massive community
+* Open source and backed by Google
+* Extends HTML allowing definition of new elements, behaviors and attributes
+    * this will allow non-js developers to understand the html Angular uses
+* Two-way data binding
+* Written with code-testing in mind
+* Multiple unit testing options available</p>
+
+  </article>
+
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2015 . Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
+            under
+            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+</body>
+</html>
+
