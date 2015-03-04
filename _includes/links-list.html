@@ -1,0 +1,23 @@
+<h1>Architecture</h1>
+<ul>
+{% assign sorted_pages = (site.pages  | sort:'weight', 'last') %}
+  {% for page in sorted_pages  %}
+    {% if page.url contains 'architecture' %}
+    {% if page.title %}
+    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h1>Doc Flow Diagrams</h1>
+<ul>
+{% assign sorted_pages = (site.pages  | sort:'weight', 'last') %}
+  {% for page in sorted_pages  %}
+    {% if page.url contains 'flow' %}
+    {% if page.title %}
+    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+<!-- <div class="sidebar well">
+{{ site.description }}
+</div>
+
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        {% for post in site.posts limit:5 %}
+          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div> -->
+
+<div class="sidebar well">
+<ul>
+  <li><a href="{{ site.baseurl }}/requirements">Requirements</a></li>
+  <li><a href="{{ site.baseurl }}/installation">Installation</a></li>
+  <li><a href="{{ site.baseurl }}/gulp-tasks">Gulp Tasks</a></li>
+</ul>
+</div>
+<div class="sidebar well">
+{% include links-list.html %}
+</div>
