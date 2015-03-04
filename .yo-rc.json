@@ -1,0 +1,9 @@
+{
+  "generator-atlas": {
+    "appName": "gen atlas testing",
+    "appDescription": "",
+    "appNameCamel": "genAtlasTesting",
+    "appNameSlug": "gen-atlas-testing",
+    "jekyllFolder": "tester"
+  }
+}
